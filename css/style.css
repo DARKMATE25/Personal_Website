@@ -1,0 +1,276 @@
+/*
+font-family: 'Josefin Slab', serif; <p>
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive; <h1>
+*/
+body {
+  margin: 0;
+  text-align: center;
+  color: #40514E;
+  font-size: 100%;
+}
+
+h1 {
+  font-family: 'Sacramento', serif;
+  font-size: 700%;
+  /*font-size: 562.5%;       /* 100% = 16px; 90px = { (90/16) * 100 }% ; */
+  font-weight: normal;
+  margin-top: 3.125rem;
+  margin-bottom: 0;
+  line-height: 5.8rem;
+  /* This should actually be an integer, and without any units. But I want it to be mobile compatible. */
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1E836C;
+  padding-bottom: 0.6rem;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+}
+
+a {
+  font-family: 'Josefin Slab', serif;
+  color: #11999E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+p {
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6;
+  border-bottom: none;
+  border-width: 0.375rem;
+  width: 4%;
+  margin: 6.25rem auto;
+}
+
+.top-container {
+  position: relative;
+  padding-top: 6.25rem;
+  background-color: rgb(224, 235, 232);
+}
+
+.name-description {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.4rem;
+  /* 2.5rem = 40px; */
+  font-weight: bold;
+  color: #66BFBF;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 14rem;
+  /* margin-right: 300px; */
+  top: 9rem;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 15rem;
+  bottom: 22rem;
+}
+
+.mountain {
+  position: relative;
+  margin-top: 4rem;
+  bottom: -4px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.profile-img {
+  width: 15%;
+}
+
+.intro {
+  width: 50%;
+  margin: auto;
+}
+
+.computer-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  border-radius: 100%;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 6.25rem auto 6.25rem auto;
+  text-align: left;
+}
+
+.Chess-Queen-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 3.125rem 0 1.25rem;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 2.5rem auto 3.75rem;
+}
+
+.btn-message {
+  background: #66BFBF;
+  background-image: -webkit-linear-gradient(top, #66BFBF, #66BFBF);
+  background-image: -moz-linear-gradient(top, #66BFBF, #66BFBF);
+  background-image: -ms-linear-gradient(top, #66BFBF, #66BFBF);
+  background-image: -o-linear-gradient(top, #66BFBF, #66BFBF);
+  background-image: -webkit-gradient(to bottom, #66BFBF, #66BFBF);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 4px;
+  color: #1B7F69;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.125rem;
+  font-weight: 100;
+  padding: 0.5rem 0.875rem 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-message:hover {
+  opacity: 0.8;
+}
+
+.footer-link {
+  margin: 0.625rem 1.250rem;  
+}
+
+.footer-link:hover {
+   color: #EAF6F6;
+}
+
+.copyright {
+  font-size: 75%;
+  padding: 1.250rem 0;
+  color: #EAF6F6;
+}
+
+@media screen and (max-width: 980px) {
+  hr {
+    border: dotted #EAF6F6;
+    border-bottom: none;
+    border-width: 1rem;
+    width: 4%;
+    margin: 6.25rem auto;
+  }
+
+  p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .name-container{
+    margin-top: 40%;
+    margin-bottom: 0px;
+    line-height: 5.8rem;
+  }
+
+  .name{
+    font-size: 1000%;
+  }
+  .name-description{
+    font-size: 300%;
+  }
+
+  .top-container {
+    margin-top: 10vh;
+    height: 1100px;
+  }
+
+  .mountain {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 50%;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .computer-img {
+    width: 50%;
+    margin: 30px;
+    float: none;
+    border-radius: 100%;
+  }
+
+  .skill-row {
+    width: 100%;
+    margin: 6.25rem auto 6.25rem auto;
+    text-align: center;
+  }
+
+  .Chess-Queen-img {
+    width: 50%;
+    float: none;
+    margin: 30px;
+  }
+
+  .contact-message {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .btn-message {
+    font-size: 3rem;
+    padding: 1.3rem 1.5rem 1rem;
+  }
+
+/*
+@media screen and (min-width: 480px){
+  .intro {
+    font-size: 250%;
+  }
+
+  h2{
+    font-size: 300%;
+  }
+
+  h3{
+    font-size: 250%;
+  }
+
+  .skill{
+    font-size: 250%;
+  }
+  .contact-message{
+    font-size: 200%;
+  }
+}
+*/
+}
